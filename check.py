@@ -2,9 +2,9 @@ from alice_blue import *
 import csv
 import requests
 import urllib
-access_token=AliceBlue.login_and_get_access_token(username='AB051040',password='#Tda@2k19',twoFA='O',api_secret='N34Q5C1CFU273Y97O8OMYT276MUGLAWY50UTXFHNCEWCXD0OAIGDLQ93B6TSSU0F')
+access_token=AliceBlue.login_and_get_access_token(username='xx',password='xx',twoFA='xx',api_secret='xx')
 print(access_token)
-data = requests.post('https://ant.aliceblueonline.com/oauth2/auth?response_type=code&state=test_state&client_id=SP37&redirect_uri=https://ant.aliceblueonline.com/plugin/callback')
+data = requests.post('https://ant.aliceblueonline.com/oauth2/auth?response_type=code&state=test_state&client_id=xx&redirect_uri=https://ant.aliceblueonline.com/plugin/callback')
 data = data.text
 print(data)
 weburl = urllib.request.urlopen(data)
